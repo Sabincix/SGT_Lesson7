@@ -45,8 +45,10 @@ public class Lesson7 {
             System.out.println("You should wear high heels");
         } else if ( day == "casual Friday") {
             System.out.println("You can wear flats");
-        } else if ( day == "Holiday") {
+        } else if ( day == "Holidays") {
             System.out.println("You can stay at home");
+        } else if ( day == "Halloween") {
+            System.out.println("You can wear any costume");
         } else {
             System.out.println("Such day does not exist");
         }
