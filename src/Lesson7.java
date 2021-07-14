@@ -39,7 +39,7 @@ public class Lesson7 {
 
 //  Office attire
 
-        String day = "Working day";
+        String day = "casual Friday";
 
         if ( day == "Working day" ) {
             System.out.println("You should wear high heels");
@@ -52,6 +52,49 @@ public class Lesson7 {
         } else {
             System.out.println("Such day does not exist");
         }
+
+
+        // Switch conditions
+        switch (day) {
+            case "Working day":
+                System.out.println("You should wear high heels");
+                break;
+            case "casual Friday":
+                System.out.println("You can wear flats");
+                break;
+            case "Halloween":
+                System.out.println("You can wear any costume");
+                break;
+            case "Holidays":
+                System.out.println("You can stay at home");
+                break;
+            default:
+                System.out.println("No such day");
+        }
+
+//          Intervals of ages
+
+//        Calculate price for a ticket in museum
+        // 0-7 Free
+        // 8-12 1 eur
+        // 13-18 2 eur
+        // 18-64 5 eur
+        // 65- 128 - free
+
+        short age = 31;
+        if ( ( age>= 0 && age < 8) || ( age >=64 && age < 120 ) ) {
+            System.out.println("You can go for free");
+        } else if( age >= 8 && age < 12 ) {
+            System.out.println("Price is 1 euro");
+        } else if( age >= 13 && age < 18 ) {
+            System.out.println("Price is 2 euro");
+        } else if( age >= 18 && age < 64 ) {
+            System.out.println("Price is 5 euro");
+        } else {
+            System.out.println("Seems that your age is incorrect");
+        }
+
+
 
     }
 }
